@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(230, 17%, 14%);
+  color: hsl(0, 0%, 100%);
+  padding: 0 155px;
+}
+
+.social-logo {
+  margin-right: 0.5rem;
+  width: 18px;
+}
+
+/* Header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.header-title {
+  font-size: 1.4rem;
+}
+
+.header-caption {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+/* Toggle */
+
+.switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+/* Social Cards */
+
+.section-1 {
+  margin-bottom: 2rem;
+}
+
+.social-cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: hsl(228, 28%, 20%);
+  padding: 1.5rem 0;
+  width: 215px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-handle {
+  font-size: 0.5rem;
+  padding-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-followers {
+  font-size: 2.7rem;
+}
+
+.followers-caption {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.25rem;
+  opacity: 0.4;
+}
+
+.followers-today {
+  padding-top: 1.4rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.up-arrow {
+  color: hsl(163, 72%, 41%);
+}
+
+.down-arrow {
+  color: hsl(356, 69%, 56%);
+}
+
+.arrow {
+  margin-right: 0.25rem;
+}
+
+/* Social Cards Overview */
+
+.section-2 {
+  margin-bottom: 2rem;
+}
+
+.section-2 h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+.social-cards-overview {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-overview {
+  background-color: hsl(228, 28%, 20%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 215px;
+  padding: 1.4rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+}
+
+.card-overview-left {
+}
+
+.overview-title {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  margin-bottom: 1.2rem;
+}
+
+.overview-count {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.card-overview-right {
+  text-align: right;
+}
+
+.overview-percent {
+  display: flex;
+  align-items: center;
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin-top: 1.7rem;
+}

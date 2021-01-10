@@ -1,87 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="styles.css" />
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <!-- Custom Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Dark Mode
+    <title>Frontend Mentor | Social Media Dashboard</title>
 
-  
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-left">
+        <h1 class="header-title">Social Media Dashboard</h1>
+        <p class="header-caption">Total Followers: 23,004</p>
+      </div>
+      <div class="header-right">
+        <p>
+          Dark Mode
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </p>
+      </div>
+    </header>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+    <section class="section-1">
+      <div class="social-cards-container">
+        <div class="card card-1">
+          <div class="card-border"></div>
+          <h5 class="card-handle">
+            <img
+              src="./images/icon-facebook.svg"
+              alt="Facebook logo"
+              class="social-logo"
+            />@nathanf
+          </h5>
+          <h2 class="card-followers">1987</h2>
+          <p class="followers-caption">Followers</p>
+          <p class="followers-today up-arrow">
+            <img src="images/icon-up.svg" class="arrow" />12 Today
+          </p>
+        </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+        <div class="card card-2">
+          <h5 class="card-handle">
+            <img
+              src="./images/icon-twitter.svg"
+              alt=""
+              class="social-logo"
+            />@nathanf
+          </h5>
+          <h2 class="card-followers">1044</h2>
+          <p class="followers-caption">Followers</p>
+          <p class="followers-today up-arrow">
+            <img src="images/icon-up.svg" class="arrow" />99 Today
+          </p>
+        </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+        <div class="card card-3">
+          <h5 class="card-handle">
+            <span class="card-3-wrap"></span>
+            <img
+              src="images/icon-instagram.svg"
+              alt=""
+              class="social-logo"
+            />@realnathanf
+          </h5>
+          <h2 class="card-followers">11k</h2>
+          <p class="followers-caption">Followers</p>
+          <p class="followers-today up-arrow">
+            <img src="images/icon-up.svg" class="arrow" />1099 Today
+          </p>
+        </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        <div class="card card-4">
+          <h5 class="card-handle">
+            <img
+              src="images/icon-youtube.svg"
+              alt=""
+              class="social-logo"
+            />Nathan F.
+          </h5>
+          <h2 class="card-followers">8239</h2>
+          <p class="followers-caption">Subscribers</p>
+          <p class="followers-today down-arrow">
+            <img src="images/icon-down.svg" class="arrow" />144 Today
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section class="section-2">
+      <h2>Overview - Today</h2>
+      <div class="social-cards-overview">
+        <div class="card-overview">
+          <div class="card-overview-left">
+            <h5 class="overview-title">Page Views</h5>
+            <p class="overview-count">87</p>
+          </div>
+          <div class="card-overview-right">
+            <img
+              src="images/icon-facebook.svg"
+              alt="Facebook logo"
+              class="social-logo"
+            />
+            <p class="overview-percent up-arrow">
+              <img src="images/icon-up.svg" class="arrow" />3%
+            </p>
+          </div>
+        </div>
 
+        <div class="card-overview">
+          <div class="card-overview-left">
+            <h5 class="overview-title">Likes</h5>
+            <p class="overview-count">52</p>
+          </div>
+          <div class="card-overview-right">
+            <img
+              src="images/icon-facebook.svg"
+              alt="Facebook logo"
+              class="social-logo"
+            />
+            <p class="overview-percent down-arrow">
+              <img src="images/icon-down.svg" class="arrow" />2%
+            </p>
+          </div>
+        </div>
 
-  Overview - Today
+        <div class="card-overview">
+          <div class="card-overview-left">
+            <h5 class="overview-title">Likes</h5>
+            <p class="overview-count">5462</p>
+          </div>
+          <div class="card-overview-right">
+            <img
+              src="images/icon-instagram.svg"
+              alt="Instagram logo"
+              class="social-logo"
+            />
+            <p class="overview-percent up-arrow">
+              <img src="images/icon-up.svg" class="arrow" />2257%
+            </p>
+          </div>
+        </div>
 
-  Page Views
-  87
-  3%
+        <div class="card-overview">
+          <div class="card-overview-left">
+            <h5 class="overview-title">Profile Views</h5>
+            <p class="overview-count">52k</p>
+          </div>
+          <div class="card-overview-right">
+            <img
+              src="images/icon-instagram.svg"
+              alt="Instagram logo"
+              class="social-logo"
+            />
+            <p class="overview-percent up-arrow">
+              <img src="images/icon-up.svg" class="arrow" />1375%
+            </p>
+          </div>
+        </div>
 
-  Likes
-  52
-  2%
+        <div class="card-overview">
+          <div class="card-overview-left">
+            <h5 class="overview-title">Retweets</h5>
+            <p class="overview-count">117</p>
+          </div>
+          <div class="card-overview-right">
+            <img
+              src="images/icon-twitter.svg"
+              alt="Twitter logo"
+              class="social-logo"
+            />
+            <p class="overview-percent up-arrow">
+              <img src="images/icon-up.svg" class="arrow" />303%
+            </p>
+          </div>
+        </div>
 
-  Likes
-  5462
-  2257%
+        <div class="card-overview">
+          <div class="card-overview-left">
+            <h5 class="overview-title">Likes</h5>
+            <p class="overview-count">507</p>
+          </div>
+          <div class="card-overview-right">
+            <img
+              src="images/icon-twitter.svg"
+              alt="Twitter logo"
+              class="social-logo"
+            />
+            <p class="overview-percent up-arrow">
+              <img src="images/icon-up.svg" class="arrow" />553%
+            </p>
+          </div>
+        </div>
 
-  Profile Views
-  52k
-  1375%
+        <div class="card-overview">
+          <div class="card-overview-left">
+            <h5 class="overview-title">Likes</h5>
+            <p class="overview-count">107</p>
+          </div>
+          <div class="card-overview-right">
+            <img
+              src="images/icon-youtube.svg"
+              alt="Youtube logo"
+              class="social-logo"
+            />
+            <p class="overview-percent down-arrow">
+              <img src="images/icon-down.svg" class="arrow" />19%
+            </p>
+          </div>
+        </div>
 
-  Retweets
-  117
-  303%
+        <div class="card-overview">
+          <div class="card-overview-left">
+            <h5 class="overview-title">Total Views</h5>
+            <p class="overview-count">1407</p>
+          </div>
+          <div class="card-overview-right">
+            <img
+              src="images/icon-youtube.svg"
+              alt="Youtube logo"
+              class="social-logo"
+            />
+            <p class="overview-percent down-arrow">
+              <img src="images/icon-down.svg" class="arrow" />12%
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
